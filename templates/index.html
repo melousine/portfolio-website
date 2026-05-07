@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio Sarah</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SWIPER CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+    <!-- GOOGLE FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100..700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<div class="navbar">
+
+    <div class="nav-logo">
+        ♪ Sarah's Site
+    </div>
+
+    <!-- HAMBURGER BUTTON -->
+    <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <!-- NAV LINKS -->
+    <div class="nav-links" id="navLinks">
+        <a href="{{ url_for('home') }}">Home</a>
+        <a href="#about">About</a>
+        <a href="#project">Project</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+</div>
+
+
+<!-- ================= HERO ================= -->
+<div class="hero">
+
+    <h1>Hi, Welcome to My Website!</h1>
+
+    <p>
+        My name is <b>Sarah</b>. I <i>love</i> making design, any kind of design.
+        I also code sometimes! Please scroll to know more about me.
+    </p>
+
+    <a href="#project" class="btn">View My Work</a>
+
+</div>
+
+
+<!-- ================= ABOUT ================= -->
+<div class="folder-section folder-red" id="about">
+
+    <h2>About Me</h2>
+
+    <div class="about-container">
+
+        <!-- SWIPER -->
+        <div class="swiper aboutSwiper">
+
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                    <img src="{{ url_for('static', filename='img/1.jpg') }}" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="{{ url_for('static', filename='img/2.jpg') }}" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="{{ url_for('static', filename='img/3.jpg') }}" alt="">
+                </div>
+
+            </div>
+
+            <div class="swiper-pagination"></div>
+
+        </div>
+
+        <!-- TEXT -->
+        <div class="about-text">
+
+            <h3 class="about-title">
+                Hi, I'm Sarah!
+
+                <img src="{{ url_for('static', filename='img/cat.gif') }}" class="title-gif">
+            </h3>
+
+            <p>
+                A student from Depok who's into Front-End programming and design.
+                I create modern web applications and digital designs that blend functionality,
+                aesthetics, and user experience.
+            </p>
+
+        </div>
+
+    </div>
+</div>
+
+
+<!-- ================= EXPERIENCE ================= -->
+<div class="section" id="experience">
+
+    <h2>Experience</h2>
+
+    <div class="timeline">
+
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+                <span class="timeline-date">Oct 2025 — Dec 2025</span>
+                <h3>Project Manager</h3>
+                <h4>Capstone Project — Chatbot</h4>
+                <p>Defined product goals and coordinated development team.</p>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+                <span class="timeline-date">Oct 2024 — Present</span>
+                <h3>Laboratory Assistant</h3>
+                <h4>Physics Lab — Gunadarma</h4>
+                <p>Assisted lab sessions and guided students.</p>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+                <span class="timeline-date">Oct 2025 — Dec 2025</span>
+                <h3>Research Field Assistant</h3>
+                <h4>Universitas Gunadarma</h4>
+                <p>Provided technical support during field sessions and acted
+                    as liaison between first and third parties.</p>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+                <span class="timeline-date">Jul 2024 — Aug 2024</span>
+                <h3>Creative Media Volunteer</h3>
+                <h4>ITSOCIART Fest — BEM FTI</h4>
+                <p>Designed merchandise, supported event documentation,
+                    and contributed visual assets for social media.</p>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+                <span class="timeline-date">Aug 2023 — Mar 2024</span>
+                <h3>Creative Design Officer</h3>
+                <h4>Girl Up Gunadarma</h4>
+                <p>Created social media visuals and collaborated with campaign
+                    teams to maintain visual identity consistency.</p>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+<!-- ================= PROJECT ================= -->
+<div class="folder-section folder-dark" id="project">
+
+    <h2>My Projects</h2>
+
+    <div class="grid">
+
+        <a href="#" class="card">
+            <h3>Website CI3</h3>
+            <p>Portfolio sebelumnya menggunakan CodeIgniter 3.</p>
+            <div class="tags">
+                <span>CodeIgniter 3</span>
+                <span>PHP</span>
+                <span>Bootstrap</span>
+            </div>
+        </a>
+
+        <a href="https://github.com/melousine/rutealt" class="card">
+            <h3>Flask Route App</h3>
+            <p>Aplikasi peta rute OSMnx & Folium.</p>
+            <div class="tags">
+                <span>Flask</span>
+                <span>OSMNx</span>
+                <span>Folium</span>
+            </div>
+        </a>
+
+        <a href="#" class="card">
+            <h3>Sentiment Analysis</h3>
+            <p>Model NLP IndoBERT.</p>
+            <div class="tags">
+                <span>Python</span>
+                <span>IndoBERTweet</span>
+            </div>
+        </a>
+
+        <a href="https://github.com/melousine/matching-cards" class="card">
+            <h3>Matching Cards</h3>
+            <p>Game Python sederhana.</p>
+            <div class="tags">
+                <span>Python</span>
+                <span>Canva</span>
+            </div>
+        </a>
+
+        <a href="https://github.com/melousine/witchcrafty" class="card">
+            <h3>WitchCrafty</h3>
+            <p>Website company profile dengan UI responsif.</p>
+            <div class="tags">
+                <span>HTML</span>
+                <span>CSS</span>
+            </div>
+        </a>
+
+        <a href="https://www.figma.com/proto/ixrkxKou1FHgBe8EVO1qYF/IMK-PERT5?node-id=94-953&p=f&viewport=601%2C579%2C0.09&t=jQfMBwXSPiQ7HQH6-1&scaling=scale-down&content-scaling=fixed&page-id=27%3A300"
+            class="card">
+            <h3>Redesign MangaPlus</h3>
+            <p>Resedign aplikasi MangaPlus dengan UI dan warna baru.</p>
+            <div class="tags">
+                <span>Figma</span>
+                <span>Wireframe</span>
+                <span>Mock Up</span>
+                <span>UI & UX Research</span>
+            </div>
+        </a>
+
+    </div>
+
+</div>
+
+
+<!-- ================= DESIGN ================= -->
+<div class="section" id="design">
+
+    <h2>Design Portfolio</h2>
+
+    <div class="design-showcase">
+
+        <div class="design-info">
+
+            <span class="design-tag">Creative Design</span>
+
+            <h3>My Design Work</h3>
+
+            <p>Futuristic presentation design with modern UI style.</p>
+
+            <div class="design-tools">
+                <span>Figma</span>
+                <span>Photoshop</span>
+                <span>Canva</span>
+            </div>
+
+            <a href="{{ url_for('static', filename='pdf/portfolio.pdf') }}" class="btn">
+                View Full Project
+            </a>
+
+        </div>
+
+        <div class="swiper designSwiper">
+
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                    <img src="{{ url_for('static', filename='design/1.jpg') }}">
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="{{ url_for('static', filename='design/2.jpg') }}">
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="{{ url_for('static', filename='design/3.jpg') }}">
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="{{ url_for('static', filename='design/4.jpg') }}">
+                </div>
+
+            </div>
+
+            <div class="swiper-pagination"></div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- ================= CONTACT ================= -->
+<div class="folder-section folder-red" id="contact">
+
+    <h2>Contact Me</h2>
+
+    <div class="contact-container">
+
+        <div class="contact-grid">
+
+            <a href="mailto:rafifasarahs@gmail.com" class="contact-card">
+                <div class="contact-icon">✉</div>
+                <h3>Email</h3>
+                <p>rafifasarahs@gmail.com</p>
+            </a>
+
+            <a href="https://wa.me/628987172484" class="contact-card">
+                <div class="contact-icon">☏</div>
+                <h3>WhatsApp</h3>
+                <p>Chat only</p>
+            </a>
+
+            <a href="https://linkedin.com/in/rafifasarahs" class="contact-card">
+                <div class="contact-icon">⌘</div>
+                <h3>LinkedIn</h3>
+                <p>Rafifa Sarah Sofiar</p>
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+<footer>
+    <p>© 2026 Sarah's Portfolio | Built with Flask</p>
+</footer>
+
+
+
+<!-- ================= SWIPER JS ================= -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script>
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    new Swiper(".aboutSwiper", {
+        loop: true,
+        autoplay: { delay: 2500 },
+        pagination: {
+            el: ".aboutSwiper .swiper-pagination",
+            clickable: true,
+        },
+    });
+
+    new Swiper(".designSwiper", {
+        loop: true,
+        autoplay: { delay: 3000 },
+        pagination: {
+            el: ".designSwiper .swiper-pagination",
+            clickable: true,
+        },
+    });
+
+});
+
+</script>
+
+
+</body>
+</html>
